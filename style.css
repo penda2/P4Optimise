@@ -26,12 +26,32 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
-
+.new-add {
+    text-align: center;
+    width: 90%;
+    padding: 0;
+}
+header .container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.citation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .row {
+    margin-top: 10px;
+}
 .bloc {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    padding: 0 20px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -54,6 +74,7 @@ a:hover {
 
 .bloc-sm {
     padding: 20px 50px;
+
 }
 
 .bg-center,
@@ -100,7 +121,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: white;
 }
 
 .d-bloc button:hover {
@@ -655,7 +676,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    width: 100%;
 }
 
 .hero-bloc-text {
@@ -677,11 +698,11 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto auto auto auto;
 }
 
@@ -700,6 +721,8 @@ p {
 }
 
 .social {
+    display: flex;
+    justify-content: space-between;
     max-width: 400px;
     margin: auto auto auto auto;
 }
@@ -717,8 +740,9 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
-    margin: auto auto auto auto;
+    width: auto;
+    margin: auto;
+    margin-bottom: 40px;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -754,7 +778,7 @@ h4 {
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+    padding: 40px;
 }
 
 .bold-link {
