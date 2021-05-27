@@ -36,7 +36,11 @@ header .container {
     margin: 0;
     display: flex;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-right {
+    margin-left: 30px;
 }
 #bloc-4-portfolio .container,
 #bloc-4-portfolio .row {
@@ -51,25 +55,43 @@ header .container {
     justify-content: center;
     align-items: center;
 }
+.black {
+    color: #000000;
+}
+.row h2 {
+    padding: 0;
+}
 footer .row {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.bolder {
+    font-weight: bold; 
 }
 figure { 
     width: 340px;
-    height: 340px;
-    margin-bottom: 50px;
+    height: auto;
 }
 figure img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
 }
 figcaption {
     width: 100%;
     height: auto;
 }
-
+.bloc-lg .row {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.col-sm-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .bloc {
     width: 100%;
     clear: both;
@@ -141,10 +163,6 @@ figcaption {
 
 .b-parallax {
     background-attachment: fixed;
-}
-
-.d-bloc {
-    color: white;
 }
 
 .d-bloc button:hover {
@@ -319,6 +337,10 @@ figcaption {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -734,6 +756,7 @@ p {
 }
 
 .cta-hero {
+    margin-bottom: 30px;
     margin-top: 22px;
     color: #000000;
     text-transform: uppercase;
@@ -743,8 +766,6 @@ p {
 }
 
 .social {
-    display: flex;
-    justify-content: space-between;
     max-width: 400px;
     margin: auto auto auto auto;
 }
@@ -789,10 +810,6 @@ h4 {
     margin-top: 25px;
 }
 
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
 
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
@@ -800,7 +817,7 @@ h4 {
 
 .black-background {
     background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px;
+    padding: 15px;
 }
 
 .bold-link {
@@ -948,8 +965,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1071,18 +1088,13 @@ h4 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
-    }
 }
-
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
+@media all and (min-width: 780px) and (max-width: 960px){
     }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+    .portfolio .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     }
 }
