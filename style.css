@@ -28,8 +28,7 @@ a:hover {
 }
 .new-add {
     text-align: center;
-    width: 90%;
-    padding: 0;
+    padding: 5px;
 }
 header .container {
     width: 100%;
@@ -45,11 +44,12 @@ header .container {
 #bloc-4-portfolio .container,
 #bloc-4-portfolio .row {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.citation {
+.text-bloc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,6 +60,7 @@ header .container {
 }
 .row h2 {
     padding: 0;
+    color: #F3976C;
 }
 footer .row {
     margin-top: 20px;
@@ -78,7 +79,7 @@ figure img {
 }
 figcaption {
     width: 100%;
-    height: auto;
+    height: 115px;
 }
 .bloc-lg .row {
     display: flex;
@@ -110,7 +111,7 @@ figcaption {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px;
 }
 
 .bloc-md {
@@ -351,6 +352,7 @@ figcaption {
 
 #bloc-1-hero h1 {
     font-size: 32px;
+    color: #F3976C;
 }
 
 .navbar {
@@ -706,7 +708,6 @@ a[data-lightbox]:hover img {
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -789,10 +790,6 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
-h1 {
-    color: #333333!important;
-}
-
 h4 {
     color: #333333!important;
 }
@@ -835,10 +832,6 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #F3976C;
-}
-
-.tc-black {
-    color: #000000;
 }
 
 .btn-atomic-tangerine {
