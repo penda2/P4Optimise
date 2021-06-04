@@ -61,6 +61,7 @@ header .container {
 .row h2 {
     padding: 0;
     color: #F3976C;
+    background-color: #000000;
 }
 footer .row {
     margin-top: 20px;
