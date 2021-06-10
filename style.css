@@ -30,6 +30,14 @@ a:hover {
     text-align: center;
     padding: 5px;
 }
+.bloc-sm img {
+    width: 215px;
+    height: 40px;
+}
+.col-sm-12 img {
+    width: 100px; 
+    height: 100px;
+}
 header .container {
     width: 100%;
     margin: 0;
